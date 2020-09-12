@@ -42,13 +42,13 @@
 (defun insert-date-version ()
   "Insert the date for use as a version.
 1970.01.30"
-  (interactive)
+  (interactive "*")
   (insert-date "%Y.%m.%d"))
 
 (defun insert-date-only-date ()
   "Insert the date, separated by hyphens.
 1970-01-30"
-  (interactive)
+  (interactive "*")
   (insert-date "%Y-%m-%d"))
 
 (defun insert-date-only-time (&optional 12-hour)
@@ -56,19 +56,19 @@
 With prefix arg, insert 12-HOUR format with AM/PM.
 23:11    (24 hour)
 11:11 PM (12 hour)"
-  (interactive "P")
+  (interactive "*P")
   (insert-date (if 12-hour
 		   "%I:%M %p"
 		 "%H:%M")))
 
 (defun insert-date-locale ()
   "Insert the current date and time according to locale."
-  (interactive)
+  (interactive "*")
   (insert-date "%c %Z"))
 
 (defun insert-date-iso8601 ()
   "Insert the current date and time in full ISO 8601 format."
-  (interactive)
+  (interactive "*")
   (insert-date "%FT%T%z"))
 
 (provide 'insert-date)
