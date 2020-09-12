@@ -3,7 +3,8 @@
 ;; Copyright (C) 2020  Jamie Beardslee
 
 ;; Author: Jamie Beardslee <jdb@jamzattack.xyz>
-;; Keywords: 
+;; Version: 2020.09.12
+;; Keywords: calendar, abbrev
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,7 +21,17 @@
 
 ;;; Commentary:
 
-;; 
+;; Just a tiny package to insert dates.  I version all my elisp
+;; packages as "%Y.%m.%d" and wanted to quickly insert that in the
+;; magit tag prompt.
+
+;; Another similar package is `insert-time'[1] but I found it too
+;; limited, as it only supports inserting four (setq-able) formats.
+
+;; No customizations are supported, I don't find it necessary because
+;; I'm the only person using this package.
+
+;; [1] https://github.com/rmm5t/insert-time.el
 
 ;;; Code:
 
