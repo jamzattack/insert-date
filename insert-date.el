@@ -3,7 +3,7 @@
 ;; Copyright (C) 2020  Jamie Beardslee
 
 ;; Author: Jamie Beardslee <jdb@jamzattack.xyz>
-;; Version: 2020.09.12
+;; Version: 2020.09.13
 ;; Keywords: calendar, abbrev
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -60,6 +60,12 @@ With prefix arg, insert 12-HOUR format with AM/PM.
   (insert-date (if 12-hour
 		   "%I:%M %p"
 		 "%H:%M")))
+
+(defun insert-date-both ()
+  "Insert the date and time.
+1970-01-30 23:11"
+  (interactive "*")
+  (insert-date "%Y-%m-%d %H:%M"))
 
 (defun insert-date-locale ()
   "Insert the current date and time according to locale."
