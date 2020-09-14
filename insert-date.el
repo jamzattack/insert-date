@@ -3,7 +3,7 @@
 ;; Copyright (C) 2020  Jamie Beardslee
 
 ;; Author: Jamie Beardslee <jdb@jamzattack.xyz>
-;; Version: 2020.09.13
+;; Version: 2020.09.14
 ;; Keywords: calendar, abbrev
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -73,7 +73,8 @@ With prefix arg, insert 12-HOUR format with AM/PM.
   (insert-date "%c %Z"))
 
 (defun insert-date-iso8601 ()
-  "Insert the current date and time in full ISO 8601 format."
+  "Insert the current date and time in full ISO 8601 format.
+1970-01-01T23:11:00+1200"
   (interactive "*")
   (insert-date "%FT%T%z"))
 
