@@ -15,21 +15,35 @@ I'm the only person using this package.
 * Command index
 
 - *Function*: ([[help:insert-date-version][insert-date-version]] ())
+
   Insert the date for use as a version.
   1970.01.30
 
 - *Function*: ([[help:insert-date-only-date][insert-date-only-date]] ())
+
   Insert the date, separated by hyphens.
   1970-01-30
 
 - *Function*: ([[help:insert-date-only-time][insert-date-only-time]] (&optional 12-hour))
+
   Insert the current time.
   With prefix arg, insert 12-HOUR format with AM/PM.
   23:11    (24 hour)
   11:11 PM (12 hour)
 
+- *Function*: ([[help:insert-date-both][insert-date-both]] ())
+
+  Insert the date and time.
+  1970-01-30 23:11
+
 - *Function*: ([[help:insert-date-locale][insert-date-locale]] ())
+
   Insert the current date and time according to locale.
 
 - *Function*: ([[help:insert-date-iso8601][insert-date-iso8601]] ())
+
   Insert the current date and time in full ISO 8601 format.
+
+* License
+
+GPL+
