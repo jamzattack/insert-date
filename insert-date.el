@@ -3,7 +3,7 @@
 ;; Copyright (C) 2020  Jamie Beardslee
 
 ;; Author: Jamie Beardslee <jdb@jamzattack.xyz>
-;; Version: 2020.09.14
+;; Version: 2025.03.24
 ;; Keywords: calendar, abbrev
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -77,6 +77,12 @@ With prefix arg, insert 12-HOUR format with AM/PM.
 1970-01-01T23:11:00+1200"
   (interactive "*")
   (insert-date "%FT%T%z"))
+
+(defun insert-date-casual ()
+  "Insert the current date for use in casual setting.
+01 January"
+  (interactive "*")
+  (insert-date "%d %B"))
 
 (provide 'insert-date)
 ;;; insert-date.el ends here
